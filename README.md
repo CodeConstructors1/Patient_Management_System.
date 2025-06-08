@@ -38,6 +38,34 @@ Prerequisites
 
   MySQL Connector/J (JDBC driver) added to your project libraries
 
+	
+  Project Structure
+
+  src/
+  
+ ├── app/
+ 
+ │     └── Main.java     # Entry point: initializes DB connection and GUI
+ 
+ ├── dao/
+ 
+ │     ├── PatientDAO.java           # Interface defining DAO methods
+ 
+ │     └── PatientDAOImpl.java       # Implementation of PatientDAO with JDBC
+ 
+ ├── gui/
+ 
+ │     └── PatientManagementGUI.java    # Swing GUI with all event handling and validation
+ 
+ ├── model/
+ 
+ │     └── Patient.java              # Patient model with Gender enum and fields
+ 
+ └── util/
+ └── DatabaseConnection.java     # Utility for establishing MySQL connection
+       
+
+
 Database Setup
 
   1.Create a MySQL database named HospitalDB.
